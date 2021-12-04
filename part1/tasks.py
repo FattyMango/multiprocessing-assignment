@@ -32,7 +32,7 @@ class Tasks :
         for i in range (1,self.__dataSet.__len__()):
             if self.__dataSet[i] > self.__max:
                 self.__max = self.__dataSet[i]
-        f = open("madata.txt",'w')
+        f = open("max.txt",'w')
         f.write(str(self.__max))
         print("max is done")        
         return self.__max
@@ -87,7 +87,7 @@ class Tasks :
 
     def print_all(self):
         
-        self.__max=open('madata.txt','r').read()
+        self.__max=open('max.txt','r').read()
         self.__min=open('min.txt','r').read()
         self.__avg=open('avg.txt','r').read()
         print('Max value : '+str(self.__max)+'\nMin value : '+str(self.__min)+'\nAverage value : '+str(self.__avg))
