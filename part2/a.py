@@ -55,7 +55,8 @@ def merge_sets(sets):
             
             final.append(i)
     final.sort()
-    print(final[0:10])
+    lnth = len(final)
+    print(str(final[0:10])+'...'+str(final[lnth-10:lnth]))
 def subList_process(file):
     '''
     Takes a file name that contains the list elements
